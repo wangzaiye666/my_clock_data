@@ -556,6 +556,11 @@
       "date": "2026-10-10",
       "isHoliday": false,
       "name": "班"
+    },
+    {
+      "date": "2026-01-25",
+      "isHoliday": false,
+      "name": "Test"
     }
   ]
   }

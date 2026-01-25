@@ -65,4 +65,4 @@ App 通过以下链接获取数据：
 
 ## License
 
-Apache-2.0 license
+MIT license
