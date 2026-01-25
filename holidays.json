@@ -559,8 +559,13 @@
     },
     {
       "date": "2026-01-25",
-      "isHoliday": false,
+      "isHoliday": true,
       "name": "Test"
+    },
+    {
+      "date": "2026-01-26",
+      "isHoliday": false,
+      "name": "班"
     }
   ]
   }
