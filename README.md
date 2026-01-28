@@ -16,6 +16,7 @@
 {
   "version": "v1.0.1",
   "updateTime": "2026-01-04T00:00:00Z",
+  "note": "",
   "data": {
     "2024": [
       {
@@ -38,6 +39,7 @@
 **字段说明：**
 - `version`: 数据版本号（格式：`年份.序号`，如 `2026.1`、`2027.1`）
 - `updateTime`: 数据更新时间（ISO 8601 格式）
+- `note`: 临时通知事项，默认为空
 - `data`: 按年份组织的节假日数据
   - `date`: 日期（YYYY-MM-DD 格式）
   - `isHoliday`: 是否为法定节假日
@@ -45,17 +47,11 @@
 
 ## 更新流程
 
-1. 每年 11-12 月国务院发布下一年节假日安排后，更新 `holidays.json`
-2. 增加对应年份的数据到 `data` 对象中
-3. 更新 `version` 字段（版本号递增，如 `2027.1`）
-4. 更新 `updateTime` 字段为当前时间
-5. 提交并推送到 GitHub
+1. 每年 10-12 月国务院发布下一年节假日安排
+2. 更新 holidays.js
+3. 更新 version.js
+4. 提交并推送到 GitHub
 
-## Raw 链接
-
-App 通过以下链接获取数据：
-
-- 节假日数据：`https://raw.githubusercontent.com/wangzaiye666/my_clock_data/main/holidays.json`
 
 ## 数据来源
 
