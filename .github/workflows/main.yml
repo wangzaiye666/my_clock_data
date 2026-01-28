@@ -16,12 +16,23 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      # 第一步：解析 JSON 中的 updateLogs 字段
+      - name: Extract Release Notes
+        id: extract_notes
+        run: |
+          # 使用 jq 提取字段值，-r 表示输出原始字符串（去掉双引号）
+          LOGS=$(jq -r '.updateLogs' version.json)
+          # 将提取到的内容存入 GitHub Action 环境变量
+          echo "logs=$LOGS" >> $GITHUB_OUTPUT
+          
+      # 第二步：创建 Release 并引用上面提取的内容
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
-          # 【修改位置】改为你仓库中 JSON 文件的真实路径
           files: |
             version.json
             holidays.json
-          # 自动生成更新日志（可选）
-          generate_release_notes: true
+          body: |
+            ### 更新日志
+            ${{ steps.extract_notes.outputs.logs }}
+          generate_release_notes: false
