@@ -1,5 +1,5 @@
 {
-  "version": "v1.0.1",
+  "version": "v1.0.2",
   "updateTime": "2026-01-25T00:00:00Z",
   "data": {
     "2024": [
@@ -566,6 +566,11 @@
       "date": "2026-01-26",
       "isHoliday": false,
       "name": "班"
+    },
+    {
+      "date": "2026-01-27",
+      "isHoliday": true,
+      "name": "Test"
     }
   ]
   }

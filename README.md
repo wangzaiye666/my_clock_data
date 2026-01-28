@@ -14,7 +14,7 @@
 
 ```json
 {
-  "version": "2026.1",
+  "version": "v1.0.1",
   "updateTime": "2026-01-04T00:00:00Z",
   "data": {
     "2024": [
