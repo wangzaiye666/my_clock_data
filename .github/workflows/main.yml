@@ -1,0 +1,27 @@
+name: Auto Release
+
+on:
+  push:
+    tags:
+      - 'v*'  # 当你推送到 v1.0, v2.1 等标签时触发
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    # 【必须添加】授予写入权限，否则会报 403 错误
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          # 【修改位置】改为你仓库中 JSON 文件的真实路径
+          files: |
+            version.json
+            holidays.json
+          # 自动生成更新日志（可选）
+          generate_release_notes: true
