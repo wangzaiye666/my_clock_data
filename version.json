@@ -1,5 +1,6 @@
 {
-  "latestVersion": "1.0.3",
-  "updateLogs": "Add notes",
+  "latestDataVersion": "v1.0.4",
+  "updateLogs": "Add app version field",
+  "latestAppVersion":"v1.0.1",
   "forceUpdate": false
 }

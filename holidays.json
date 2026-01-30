@@ -1,7 +1,8 @@
 {
-  "version": "v1.0.3",
+  "version": "v1.0.4",
   "updateTime": "2026-01-25T00:00:00Z",
   "note": "Note users",
+  "forceUpdate": false,
   "data": {
     "2024": [
     {

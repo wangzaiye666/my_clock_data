@@ -17,6 +17,7 @@
   "version": "v1.0.1",
   "updateTime": "2026-01-04T00:00:00Z",
   "note": "",
+  "forceUpdate": false,
   "data": {
     "2024": [
       {
@@ -40,6 +41,7 @@
 - `version`: 数据版本号（格式：`年份.序号`，如 `2026.1`、`2027.1`）
 - `updateTime`: 数据更新时间（ISO 8601 格式）
 - `note`: 临时通知事项，默认为空
+- `forceUpdate`: 是否必须更新事项
 - `data`: 按年份组织的节假日数据
   - `date`: 日期（YYYY-MM-DD 格式）
   - `isHoliday`: 是否为法定节假日
